@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{%- include components/banner.html cover=page.cover title=page.title post=page -%}
+<div id="main" class="mdui-container-fluid">
+  <div class="mdui-row mdui-valign">
+    <div class="mdui-col mdui-col-xs-12 mdui-col-sm-10 mdui-col-md-8 mdui-center mdui-m-y-2">
+      <div class="mdui-typo">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+</div>

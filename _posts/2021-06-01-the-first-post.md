@@ -4,7 +4,9 @@ title: '第一篇文章'
 date: 2021-06-01 00:00
 category: other
 author: Erven2016
+cover: 'https://erven2016-1255318626.cos.ap-shanghai.myqcloud.com/Blog/posts/2021-01-24-hello-world/helloworld.webp'
 tags: []
+theme: 'red|pink'
 summary: 本博客的第一篇文章啦
 ---
 ## 言始

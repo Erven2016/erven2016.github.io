@@ -28,9 +28,14 @@ twitter_username: erven2016
 github_username:  erven2016
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Paginator settings
+paginate: 5
+paginate_path: "/page:num"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

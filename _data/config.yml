@@ -1,1 +1,16 @@
 # Basic config
+title: "Erven2016's Blog"
+description: >-
+  dd
+
+# Index page settings
+index:
+  banner:
+    title: 'Erven2016 的博客'
+    motto: '左条卵，饮茶先啦！'
+    cover: 'https://erven2016-1255318626.cos.ap-shanghai.myqcloud.com/Blog/banner/Material-Design/wallhaven-mpv1o8.jpg'
+
+# Theme settings
+theme:
+  default_theme_primary: 'indigo'
+  default_theme_accent: 'pink'
