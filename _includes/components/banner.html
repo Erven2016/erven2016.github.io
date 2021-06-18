@@ -1,0 +1,30 @@
+<div class="page-banner user-select-disabled" id="page-banner">
+  {%- if include.cover -%}
+  <style>
+    .page-banner {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+      url('{{ include.cover }}');
+    }
+  </style>
+  {%- else -%}
+  <script>
+    document.getElementById('page-banner').classList.add('mdui-color-theme');
+    document.getElementById('header').classList.add('mdui-color-theme');
+  </script>
+  {%- endif -%}
+  <div class="page-banner-content mdui-valign">
+    <div class="mdui-center">
+      {%- if include.title -%}
+      <div class="mdui-typo-display-1 mdui-text-color-white" style="font-weight: 500;">{{ include.title }}</div>
+      {%- endif -%}
+      {%- if include.post -%}
+      <div class="mdui-text-center mdui-m-t-1 mdui-text-color-white mdui-typo-body-2-opacity">{{ include.post.date | date:
+        '%Y/%m/%d' }} - <strong>{{ include.post.category }}</strong>
+      </div>
+      {%- endif -%}
+      {%- if include.description -%}
+      <div class="mdui-m-t-1 mdui-text-center mdui-typo-body-2-opacity mdui-text-color-white">{{ include.description }}</div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>

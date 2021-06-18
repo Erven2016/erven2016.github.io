@@ -1,0 +1,14 @@
+.page-banner {
+  height: 50vh;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.page-banner>.page-banner-content {
+  height: 100%;
+}
+
+.user-select-disabled {
+  user-select: none;
+}

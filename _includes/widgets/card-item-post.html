@@ -1,0 +1,23 @@
+<div class="mdui-card mdui-hoverable mdui-ripple" onclick="javadcript:window.location.href='{{ include.post.url }}';">
+  <div class="mdui-card-media mdui-color-indigo" style="min-height: 245px;">
+    {%- if include.post.cover -%}
+    <img src="{{ include.post.cover }}" style="height: 245px;object-fit: cover;" alt="">
+    <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+      <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title mdui-list-item-two-line">{{ include.post.title | default: '无题' }}</div>
+        {%- if include.post.summary -%}
+        <div class="mdui-card-primary-subtitle mdui-list-item-one-line">{{ include.post.summary }}</div>
+        {%- endif -%}
+      </div>
+    </div>
+    {%- else -%}
+    <img src="" alt="">
+    <div class="mdui-card-primary">
+      <div class="mdui-card-primary-title">{{ include.post.title | default: '无题' }}</div>
+      {%- if include.post.summary -%}
+      <div class="mdui-card-primary-subtitle mdui-list-item-two-line">{{ include.post.summary }}</div>
+      {%- endif -%}
+    </div>
+    {%- endif -%}
+  </div>
+</div>

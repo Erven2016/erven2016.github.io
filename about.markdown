@@ -1,7 +1,8 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: '关于'
+permalink: '/about/'
+theme: 'red'
 ---
 
-no more information
+## 关于

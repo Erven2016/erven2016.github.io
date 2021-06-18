@@ -1,0 +1,34 @@
+<div id="header" class="mdui-appbar mdui-appbar-fixed mdui-appbar-inset mdui-shadow-0">
+  <div class="mdui-toolbar">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-drawer="{target: '#drawer'}"><i
+        class="mdui-icon material-icons">menu</i></button>
+    <a href="/" class="mdui-typo-title">{{ site.data.config.title }}</a>
+    <div class="mdui-toolbar-spacer"></div>
+  </div>
+</div>
+<script>
+  function headerStyleScrollChange() {
+    var not_color_change = '{%- if page.date -%}{%- if page.cover -%}false{%- else -%}true{%- endif -%}{%- else -%}undefined{%- endif -%}';
+    var top = $("#main").offset().top;
+    var scrollTop = document.documentElement.scrollTop;
+    if (scrollTop < top) {
+      if (not_color_change != 'true') {
+        $('#header').removeClass('mdui-color-theme');
+      }
+      $('#header').addClass('mdui-shadow-0');
+      $('#header').removeClass('mdui-headroom-pinned-top');
+      $('#header').removeClass('mdui-headroom-unpinned-top');
+    } else {
+      $('#header').addClass('mdui-color-theme');
+      $('#header').removeClass('mdui-shadow-0');
+      $('#header').addClass('mdui-appbar-scroll-hide');
+      $('#header').addClass('mdui-headroom');
+      $('#header').addClass('mdui-headroom-pinned-top');
+    }
+    mdui.$('#header').mutation()
+  }
+  $(window).on('scroll', function () {
+    headerStyleScrollChange()
+  })
+</script>
+{%- include components/drawer.html -%}

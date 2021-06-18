@@ -1,0 +1,31 @@
+{%- assign theme = page.theme | split: '|' -%}
+<script>
+  function encodingColorClassName(color,type) {
+    var class_name = 'mdui-theme'
+    if (type=='primary') {
+      class_name = class_name + '-primary-' + color;
+    } else {
+      class_name = class_name + '-accent-' + color;
+    }
+    return class_name;
+  }
+
+  var default_theme_primary = '{{ site.data.config.theme.default_theme_primary }}';
+  var default_theme_accent = '{{ site.data.config.theme.default_theme_accent }}';
+
+  var page_theme_primary = '{{ theme[0] | default: "" }}';
+  var page_theme_accent = '{{ theme[1] | default: "" }}';
+
+  if (page_theme_primary == '') {
+    page_theme_primary = default_theme_primary;
+  }
+
+  
+  if (page_theme_accent == '') {
+    page_theme_accent = default_theme_accent;
+  }
+
+  document.body.classList.add(encodingColorClassName(page_theme_primary, 'primary'));
+  document.body.classList.add(encodingColorClassName(page_theme_accent, 'accent'));
+
+</script>

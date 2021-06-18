@@ -1,0 +1,9 @@
+---
+layout: default
+title: '文章归档'
+theme: 'blue'
+---
+{%- capture page_description -%}
+本博客共有 {{ site.posts | size }} 篇文章。
+{%- endcapture -%}
+{%- include components/banner.html title=page.title description=page_description -%}
