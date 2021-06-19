@@ -7,3 +7,26 @@ theme: 'blue'
 本博客共有 {{ site.posts | size }} 篇文章。
 {%- endcapture -%}
 {%- include components/banner.html title=page.title description=page_description -%}
+<div class="mdui-container-fluid">
+  <div class="mdui-row">
+    <div class="mdui-col mdui-col-xs-12 mdui-col-sm-10 mdui-col-offset-sm-1 mdui-col-md-8 mdui-col-offset-md-2">
+      {%- assign current_date = "" -%}
+      <ul class="mdui-list">
+        {%- for post in site.posts -%}
+        {%- assign post_date = post.date | date: '%Y年%m月' -%}
+        {%- if post_date != current_date -%}
+        {%- assign current_date = post_date -%}
+        <h2>{{ post_date }}</h2>
+        {%- endif -%}
+        <li class="mdui-list-item mdui-ripple">
+          <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-theme-600">description</i>
+          <div class="mdui-list-item-content">
+            <div class="mdui-list-item-title mdui-list-item-one-line">{{ post.title }}</div>
+            <div class="mdui-list-item-text mdui-list-item-one-line">{{ post.date | date: '%Y-%m-%d' }} / {{ post.category }} / {{ post.summary }}</div>
+          </div>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</div>
