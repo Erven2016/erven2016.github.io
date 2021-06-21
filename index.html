@@ -11,21 +11,20 @@ title: 'index'
 cover=site.data.config.index.banner.cover description=site.data.config.index.banner.motto
 title=banner_title -%}
 <div id="main" class="mdui-container-fluid user-select-disabled">
-  {%- if paginator -%}
   <div class="mdui-row">
     <div class="mdui-col mdui-col-xs-12 mdui-m-t-3">
       <div class="mdui-typo-title mdui-float-left">Lastest</div>
     </div>
-    {%- for post in paginator.posts limit: 5 -%}
+    {%- for post in site.posts limit: 5 -%}
     <div class="mdui-col mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4 mdui-m-t-2">
       {%- include widgets/card-item-post.html post=post -%}
     </div>
     {%- endfor -%}
-    <div class="mdui-col mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4 mdui-m-t-2">
+    <div class="mdui-col mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4 mdui-m-t-2"
+      onclick="javascript:window.location.href='/overview';">
       <div class="mdui-valign mdui-color-theme-100 mdui-hoverable" style="height: 245px;width: 100%;">
         <div class="mdui-center">查看更多</div>
       </div>
     </div>
   </div>
-  {%- endif -%}
 </div>

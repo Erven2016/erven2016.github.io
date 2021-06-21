@@ -18,7 +18,7 @@ theme: 'blue'
         {%- assign current_date = post_date -%}
         <h2>{{ post_date }}</h2>
         {%- endif -%}
-        <li class="mdui-list-item mdui-ripple">
+        <li class="mdui-list-item mdui-ripple" onclick="javascript:window.location.href='{{ post.url }}';">
           <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-theme-600">description</i>
           <div class="mdui-list-item-content">
             <div class="mdui-list-item-title mdui-list-item-one-line">{{ post.title }}</div>
