@@ -1,6 +1,6 @@
 <div class="mdui-card">
   {%- if include.post.cover -%}
-  <div class="mdui-card-media">
+  <div class="mdui-card-media mdui-ripple">
     <img src="{{ include.post.cover }}" style="height: 36vh;object-fit: cover;" alt="">
   </div>
   {%- endif -%}
@@ -19,6 +19,7 @@
     {{ include.post.content | strip_html | truncatewords: 20 }}
   </div>
   <div class="mdui-card-actions">
-    <button class="mdui-btn mdui-btn-bold mdui-ripple mdui-center" onclick="javascript:window.location.href='{{ include.post.url }}';">查看全文</button>
+    <button class="mdui-btn mdui-btn-bold mdui-ripple mdui-center"
+      onclick="javascript:window.location.href='{{ include.post.url }}';">查看全文</button>
   </div>
 </div>

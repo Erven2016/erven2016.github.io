@@ -10,20 +10,35 @@ title: 'index'
 {%- include components/banner.html
 cover=site.data.config.index.banner.cover description=site.data.config.index.banner.motto
 title=banner_title -%}
-<div id="main" class="mdui-container-fluid user-select-disabled">
+<div id="main" class="mdui-container-fluid" style="margin-top: -15vh;">
   <div class="mdui-row">
-    <div class="mdui-col mdui-col-xs-12 mdui-m-t-3">
-      <div class="mdui-typo-title mdui-float-left">Lastest</div>
-    </div>
-    {%- for post in site.posts limit: 5 -%}
-    <div class="mdui-col mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4 mdui-m-t-2">
-      {%- include widgets/card-item-post.html post=post -%}
-    </div>
-    {%- endfor -%}
-    <div class="mdui-col mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4 mdui-m-t-2"
-      onclick="javascript:window.location.href='/overview';">
-      <div class="mdui-valign mdui-color-theme-100 mdui-hoverable" style="height: 245px;width: 100%;">
-        <div class="mdui-center">查看更多</div>
+    <div class="mdui-col mdui-col-xs-12 mdui-col-sm-10 mdui-col-offset-sm-1 mdui-col-md-8 mdui-col-offset-md-2">
+      <div class="mdui-row mdui-row-xs-1">
+        {%- if paginator -%}
+        {%- for post in paginator.posts -%}
+        <div class="mdui-col mdui-m-y-1">
+          {%- include widgets/card-paginator-item-post.html post=post -%}
+        </div>
+        {%- endfor -%}
+        {%- endif -%}
+        <div class="mdui-col mdui-m-y-2">
+          <div class="mdui-row mdui-row-xs-2 mdui-m-x-3">
+            <div class="mdui-col">
+              {% if paginator.previous_page %}
+              <a class="mdui-btn mdui-btn-icon mdui-ripple mdui-color-theme-a700 mdui-float-left"
+                href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i
+                  class="mdui-icon material-icons">arrow_back</i></a>
+              {% endif %}
+            </div>
+            <div class="mdui-col">
+              {% if paginator.next_page %}
+              <a class="mdui-btn mdui-btn-icon mdui-ripple mdui-color-theme-accent mdui-float-right"
+                href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i
+                  class="mdui-icon material-icons" onclick="">arrow_forward</i></a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

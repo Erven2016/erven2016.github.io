@@ -1,0 +1,19 @@
+<div class="top-scroll-bar mdui-color-theme-accent"></div>
+<script>
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      $(".top-scroll-bar").attr("style", "width: " + ($(this).scrollTop() / ($(document).height() - $(this).height()) * 100) + "%; display: block;");
+    });
+  });
+</script>
+<style>
+  .top-scroll-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+    width: 0;
+    height: 3px;
+  }
+</style>

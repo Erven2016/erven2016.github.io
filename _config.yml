@@ -6,7 +6,7 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
 paginate: 5 # the number of posts pre single page
-paginate_path: "/overview/page:num" # the path of paginate entry page
+paginate_path: "/page:num" # the path of paginate entry page
 
 # Exclude from processing.
 # The following items will not be processed, by default.
