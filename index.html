@@ -1,15 +1,11 @@
 ---
 layout: default
 title: 'index'
+cover: 'https://erven2016-1255318626.cos.ap-shanghai.myqcloud.com/Blog/banner/Material-Design/wallhaven-mpv1o8.jpg'
 ---
-{%- if site.data.config.index.banner.title -%}
-{%- assign banner_title = site.data.config.index.banner.title -%}
-{%- else -%}
-{%- assign banner_title = site.data.config.title -%}
-{%- endif -%}
 {%- include components/banner.html
-cover=site.data.config.index.banner.cover description=site.data.config.index.banner.motto
-title=banner_title -%}
+cover=page.cover description=site.data.config.motto
+title=site.data.config.title -%}
 <div id="main" class="mdui-container-fluid" style="margin-top: -15vh;">
   <div class="mdui-row">
     <div class="mdui-col mdui-col-xs-12 mdui-col-sm-10 mdui-col-offset-sm-1 mdui-col-md-8 mdui-col-offset-md-2">
