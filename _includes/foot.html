@@ -1,44 +1,44 @@
 <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
-    integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
-    crossorigin="anonymous"></script>
+  integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A" crossorigin="anonymous"></script>
 <script src="/assets/js/theme.js"></script>
+<script src="/assets/js/global.js"></script>
 
 <script>
-    // Appbar behavior
-    var cover = '{% if page.cover %}{{ page.cover }}{%- endif -%}';
-    var banner = document.getElementById('page-banner');
-    if (banner) {
-        var is_banner = true;
+  // Appbar behavior
+  var cover = '{% if page.cover %}{{ page.cover }}{%- endif -%}';
+  var banner = document.getElementById('page-banner');
+  if (banner) {
+    var is_banner = true;
+  } else {
+    var is_banner = false;
+  }
+  if (cover) {
+    var is_cover = true;
+  } else {
+    var is_cover = false;
+  }
+  window.onscroll = function () {
+    var header = document.getElementById('header');
+    if (document.getElementById('main').getBoundingClientRect().top <= 0) {
+      if (is_cover) {
+        header.classList.add('{%- if page.theme -%}mdui-color-theme{%- else -%}mdui-color-grey-900{%- endif -%}');
+      } else {
+        header.classList.add('mdui-color-theme');
+      }
     } else {
-        var is_banner = false;
+      header.classList.remove('{%- if page.theme -%}mdui-color-theme{%- else -%}mdui-color-grey-900{%- endif -%}');
     }
-    if (cover) {
-        var is_cover = true;
+  }
+  window.onload = function () {
+    var header = document.getElementById('header');
+    if (document.getElementById('main').getBoundingClientRect().top <= 0) {
+      if (is_cover) {
+        header.classList.add('{%- if page.theme -%}mdui-color-theme{%- else -%}mdui-color-grey-900{%- endif -%}');
+      } else {
+        header.classList.add('mdui-color-theme');
+      }
     } else {
-        var is_cover = false;
+      header.classList.remove('{%- if page.theme -%}mdui-color-theme{%- else -%}mdui-color-grey-900{%- endif -%}');
     }
-    window.onscroll = function () {
-        var header = document.getElementById('header');
-        if (document.getElementById('main').getBoundingClientRect().top <= 0) {
-            if (is_cover) {
-                header.classList.add('header-blur');
-            } else {
-                header.classList.add('mdui-color-theme')
-            }
-        } else {
-            header.classList.remove('header-blur');
-        }
-    }
-    window.onload = function () {
-        var header = document.getElementById('header');
-        if (document.getElementById('main').getBoundingClientRect().top <= 0) {
-            if (is_cover) {
-                header.classList.add('header-blur');
-            } else {
-                header.classList.add('mdui-color-theme')
-            }
-        } else {
-            header.classList.remove('header-blur');
-        }
-    }
+  }
 </script>

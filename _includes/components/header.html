@@ -1,17 +1,18 @@
 <div id="header"
-  class="mdui-appbar mdui-appbar-fixed mdui-appbar-inset mdui-shadow-0 mdui-text-color-white">
+  class="mdui-appbar mdui-appbar-fixed mdui-appbar-inset mdui-shadow-0 mdui-text-color-white mdui-appbar-scroll-hide">
   <div class="mdui-toolbar">
     <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-drawer="{target: '#drawer'}"><i
         class="mdui-icon material-icons">menu</i></button>
     <a href="/" class="mdui-typo-title">{{ site.data.config.title }}</a>
     <div class="mdui-toolbar-spacer"></div>
+    {%- if page.date -%}
+    <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#drawer-post-contents'}"><i class="mdui-icon material-icons">format_list_bulleted</i></button>
+    {%- endif -%}
+    <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-hidden"><i class="mdui-icon material-icons">brightness_2</i></button>
+    <button class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">more_vert</i></button>
   </div>
 </div>
-<style>
-  .header-blur {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    backdrop-filter: blur(4px);
-  }
-</style>
 {%- include components/drawer.html -%}
+{%- if page.date -%}
+{%- include components/drawer-post-contents.html -%}
+{%- endif -%}

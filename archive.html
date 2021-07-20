@@ -7,7 +7,7 @@ theme: 'blue'
 本博客共有 {{ site.posts | size }} 篇文章。
 {%- endcapture -%}
 {%- include components/banner.html title=page.title description=page_description -%}
-<div class="mdui-container-fluid">
+<div class="mdui-container-fluid" style="min-height: 40vh;">
   <div class="mdui-row">
     <div class="mdui-col mdui-col-xs-12 mdui-col-sm-10 mdui-col-offset-sm-1 mdui-col-md-8 mdui-col-offset-md-2">
       {%- assign current_date = "" -%}

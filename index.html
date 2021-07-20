@@ -13,7 +13,7 @@ title=site.data.config.title -%}
         {%- if paginator -%}
         {%- for post in paginator.posts -%}
         <div class="mdui-col mdui-m-y-1">
-          {%- include widgets/card-paginator-item-post.html post=post -%}
+          {%- include components/card-paginator-item-post.html post=post -%}
         </div>
         {%- endfor -%}
         {%- endif -%}

@@ -1,0 +1,19 @@
+<button id="button-scroll-to-top"
+  class="mdui-fab mdui-color-white mdui-fab-fixed mdui-ripple mdui-headroom mdui-headroom-pinned-top mdui-color-theme-accent"
+  mdui-headroom="{unpinnedClass:'transform-button-scroll-to-top'}"
+  onclick="javascript:scrollToTop();"
+  style="z-index: 10000;">
+  <i class="mdui-icon material-icons">expand_less</i>
+</button>
+<style>
+  .transform-button-scroll-to-top {
+    box-shadow: none !important;
+    -webkit-transform: translate3d(0, 150%, 0) !important;
+    transform: translate3d(0, 150%, 0) !important;
+  }
+</style>
+<script>
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
