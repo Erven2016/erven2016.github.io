@@ -1,0 +1,17 @@
+baseURL: https://blog.erven2016.com
+languageCode: zh-cn
+defaultContentLanguage: "zh-hans"
+hasCJKLanguage: true
+copyright: Erven2016
+title: 贵华的博客
+theme: itheme
+
+params:
+  showMore: false
+  email: "i@erven2016.com"
+  socialMedia:
+    - name: "Github"
+      url: "https://github.com/Erven2016"
+  blogroll:
+    - name: "Daft Punk"
+      url: "https://www.daftpunk.com/"
