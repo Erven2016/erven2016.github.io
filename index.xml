@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>贵华的博客</title>
+    <link>https://blog.erven2016.com/</link>
+    <description>Recent content on 贵华的博客</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <copyright>Erven2016</copyright>
+    <lastBuildDate>Thu, 22 Aug 2024 04:00:52 +0800</lastBuildDate>
+    <atom:link href="https://blog.erven2016.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://blog.erven2016.com/about/</link>
+      <pubDate>Thu, 22 Aug 2024 04:00:52 +0800</pubDate>
+      <guid>https://blog.erven2016.com/about/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
