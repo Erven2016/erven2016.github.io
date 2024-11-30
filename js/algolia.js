@@ -1,7 +1,7 @@
 (() => {
   // ns-params:@params
   var baseURL = "https://blog.erven2016.com/";
-  var params = { blogroll: [{ name: "Daft Punk", url: "https://www.daftpunk.com/" }], email: "i@erven2016.com", showcopyright: true, showmore: false, showrss: true, socialmedia: [{ name: "Github", url: "https://github.com/Erven2016" }] };
+  var params = { blogroll: null, email: "i@erven2016.com", showcopyright: true, showmore: false, showrss: true, socialmedia: [{ name: "Github", url: "https://github.com/Erven2016" }] };
 
   // <stdin>
   var { appid, appkey, searchindex: indexName, enabled } = params.algolia;
