@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Zh-Cns on Guihua Lei</title>
+        <link>https://blog.erven2016.com/zh-cn/</link>
+        <description>Recent content in Zh-Cns on Guihua Lei</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>leiguihua2016@gmail.com</copyright>
+        <lastBuildDate>Sat, 30 Nov 2024 12:20:53 +0800</lastBuildDate><atom:link href="https://blog.erven2016.com/zh-cn/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>你好世界</title>
+        <link>https://blog.erven2016.com/zh-cn/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</link>
+        <pubDate>Sat, 30 Nov 2024 12:20:53 +0800</pubDate>
+        
+        <guid>https://blog.erven2016.com/zh-cn/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</guid>
+        <description>&lt;h2 id=&#34;20241130&#34;&gt;2024.11.30
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;重置博客内容&lt;/li&gt;
+&lt;li&gt;使用主题 &lt;code&gt;hugo-theme-stack&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
