@@ -1,130 +1,249 @@
 <!DOCTYPE html>
-<html class="js no-touch  progressive-image  no-reduced-motion progressive" lang="zh-hans">
-  <head>
-    <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="/img/favicon.ico">
-
-    <meta name="keyword" content=""><meta property="og:url" content="https://blog.erven2016.com/tags/">
-  <meta property="og:site_name" content="贵华的博客">
-  <meta property="og:title" content="Tags">
-  <meta property="og:locale" content="zh_cn">
-  <meta property="og:type" content="website">
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="d你好世界">
 <title>Tags</title>
 
-    <link rel="canonical" href="/tags/">
+<link rel='canonical' href='https://blog.erven2016.com/tags/'>
 
-    <link rel="stylesheet" href="/css/global.css">
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Tags">
+<meta property='og:description' content="d你好世界">
+<meta property='og:url' content='https://blog.erven2016.com/tags/'>
+<meta property='og:site_name' content='演示站点'>
+<meta property='og:type' content='website'>
+<meta name="twitter:title" content="Tags">
+<meta name="twitter:description" content="d你好世界"><link rel="alternate" type="application/rss&#43;xml" href="https://blog.erven2016.com/tags/index.xml">
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
-    <link rel="stylesheet" href="/css/custom.css">
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
 
-    <link rel="stylesheet" href="/css/search.css" />
-
-    
-    
-
-    
-    
-
-</head>
-  </head>
-  <body class=" page-landing   ">
-    <header>
-      <nav class="nav">
-  <div class="nav-wrapper">
-    <div class="nav-content-wrapper">
-      <div class="nav-content">
-        <a href="/ " class="nav-title">贵华的博客</a>
-        <div class="nav-menu">
-          <div class="nav-item-wrapper">
-            <a href="/posts " class="nav-item-content">目录</a>
-          </div><div class="nav-item-wrapper">
-            <a href="/about" class="nav-item-content">关于</a>
-          </div><div class="nav-item-wrapper">
-            <a href="/index.xml" class="nav-item-content" target="_blank">RSS</a>
-          </div></div>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<script>
-  function toggleSearchModal(){
-    const template = `
-    <div class="modal-body">
-      <div id="autocomplete" onclick="event.stopPropagation();"></div>
-    </div>
-    `
-    const modal = document.querySelector("#modal-wrapper")
-    if(!modal){
-      const div = document.createElement("div")
-      document.body.setAttribute("style","overflow: hidden;")
-      div.setAttribute("id", "modal-wrapper")
-      div.setAttribute("onclick", "toggleSearchModal()")
-      div.innerHTML = template
-      const script = document.createElement("script");script.setAttribute("src", "https://blog.erven2016.com/js/algolia.js")
-      div.appendChild(script)
-      document.body.append(div)
-    } else {
-      document.body.removeAttribute("style")
-      document.body.removeChild(modal)
-    }
-  }
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
 </script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    <img src="https://avatars.githubusercontent.com/u/18652605?v=4" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+                </a>
+                
+                    <span class="emoji">📫</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">演示站点</a></h1>
+            <h2 class="site-description">d你好世界</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/erven2016'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="https://blog.erven2016.com/" selected>中文</option>
+                                
+                                    <option value="https://blog.erven2016.com/en/" >English</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                <section class="widget tagCloud">
+    <div class="widget-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+    </div>
+    <h2 class="widget-title section-title">分类</h2>
+
+    <div class="tagCloud-tags">
+        
+    </div>
+</section>
+
+            
+        
+            
+                <section class="widget tagCloud">
+    <div class="widget-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+    </div>
+    <h2 class="widget-title section-title">标签云</h2>
+
+    <div class="tagCloud-tags">
+        
+    </div>
+</section>
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <header>
+        <h3 class="section-title">
+            
+                章节
+            
+        </h3>
+
+        <div class="section-card">
+            <div class="section-details">
+                <h3 class="section-count">0 个页面</h3>
+                <h1 class="section-term">Tags</h1>
+                
+            </div>
+        </div>
     </header>
+        
     
-<div class="results">
-    <div class="results__content">
-      <div class="result" role="group">
-        <h2 class="result__title">“所有标签”</h2>
-        <div class="tags-list">
-          
+    <section class="article-list--compact">
+        
+    </section>
+<footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2023 - 
+        
+        2024 leiguihua2016@gmail.com
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.29.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+            </main>
         </div>
-      </div>
-    </div>
-</div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
 
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
 
-    
-    <div class="footer-main ">
-  <div class="content-body footer-wraper">
-    <div class="footer-box">
-      <div class="foot-nav">
-        <div class="foot-nav-items">
-          <div class="item">
-            <div class="logo"></div>
-            <div class="email">Email: <a href="mailto:i@erven2016.com">i@erven2016.com</a></div>
-          </div>
+        document.head.appendChild(customFont);
+    }());
+</script>
 
-          <div class="item community">
-            <div class="item-title">社交媒体</div>
-            
-              <a href="https://github.com/Erven2016" target="_blank">Github</a>
-            
-          </div>
-
-          <div class="item resources">
-            <div class="item-title">友链</div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="bottom">
-        <div class="item copyright">
-          &copy; 2024
-          Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://github.com/floyd-li/hugo-theme-itheme" target="_blank">iTheme</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-  </body>
-    
-    
-
-    
-    
+    </body>
 </html>
