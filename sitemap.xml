@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <sitemap>
-    <loc>https://blog.erven2016.com/zh-cn/sitemap.xml</loc>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>https://blog.erven2016.com/en/sitemap.xml</loc>
-    
-  </sitemap>
-  
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://blog.erven2016.com/</loc>
+    <lastmod>2024-11-30T11:36:28+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.erven2016.com/post/</loc>
+    <lastmod>2024-11-30T11:36:28+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.erven2016.com/post/test/</loc>
+    <lastmod>2024-11-30T11:36:28+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.erven2016.com/about/</loc>
+    <lastmod>2024-08-22T04:00:52+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.erven2016.com/categories/</loc>
+  </url><url>
+    <loc>https://blog.erven2016.com/tags/</loc>
+  </url><url>
+    <loc>https://blog.erven2016.com/archives/</loc>
+  </url><url>
+    <loc>https://blog.erven2016.com/search/</loc>
+  </url>
+</urlset>
