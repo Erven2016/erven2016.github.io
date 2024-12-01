@@ -5,44 +5,23 @@
         <link>https://blog.erven2016.com/</link>
         <description>Recent content on Guihua Lei</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
+        <language>en</language>
         <copyright>leiguihua2016@gmail.com</copyright>
-        <lastBuildDate>Sat, 30 Nov 2024 12:20:53 +0800</lastBuildDate><atom:link href="https://blog.erven2016.com/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>你好世界</title>
-        <link>https://blog.erven2016.com/zh-cn/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</link>
-        <pubDate>Sat, 30 Nov 2024 12:20:53 +0800</pubDate>
+        <lastBuildDate>Mon, 02 Dec 2024 02:35:24 +0800</lastBuildDate><atom:link href="https://blog.erven2016.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About</title>
+        <link>https://blog.erven2016.com/about/</link>
+        <pubDate>Mon, 02 Dec 2024 02:35:24 +0800</pubDate>
         
-        <guid>https://blog.erven2016.com/zh-cn/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</guid>
-        <description>&lt;h2 id=&#34;20241130&#34;&gt;2024.11.30
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;重置博客内容&lt;/li&gt;
-&lt;li&gt;使用主题 &lt;code&gt;hugo-theme-stack&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+        <guid>https://blog.erven2016.com/about/</guid>
+        <description>&lt;p&gt;Hello, I am Guihua Lei aka Erven2016.&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>关于</title>
-        <link>https://blog.erven2016.com/about/zh-cn/</link>
-        <pubDate>Sat, 30 Nov 2024 12:14:33 +0800</pubDate>
-        
-        <guid>https://blog.erven2016.com/about/zh-cn/</guid>
-        <description>&lt;p&gt;你好。。。啊&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>test</title>
+        <title>归档</title>
         <link>https://blog.erven2016.com/archives/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://blog.erven2016.com/archives/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>test</title>
-        <link>https://blog.erven2016.com/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.erven2016.com/search/</guid>
         <description></description>
         </item>
         
