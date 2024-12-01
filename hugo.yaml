@@ -6,25 +6,49 @@ copyright: leiguihua2016@gmail.com
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
-DefaultContentLanguage: zh-cn
+DefaultContentLanguage: en
 
 languages:
-  zh-cn:
-    languageName: 简体中文
-    title: "Guihua Lei"
+  en:
+    languageName: English
+    contentDir: content/en
     weight: 1
     menu:
       main:
         - identifier: home
-          name: 主页
+          name: Home
           url: /
+          weight: -100
+          params:
+            icon: home
+            newTab: false
+        # - identifier: about
+        #   name: 关于
+        #   url: /about/zh-cn
+        #   weight: -100
+        #   params:
+        #     icon: user
+        #     newTab: false
+    params:
+      # mainSections:
+      #   - post
+      #   - en
+  zh-cn:
+    languageName: 简体中文
+    weight: 2
+    contentDir: content/zh-cn
+    menu:
+      main:
+        - identifier: home
+          name: 主页
+          url: /zh-cn
           weight: -100
           params:
             icon: home
             newTab: false
         - identifier: about
           name: 关于
-          url: /about/zh-cn
+          url: /zh-cn/about
           weight: -100
           params:
             icon: user
@@ -38,14 +62,7 @@ languages:
     params:
       mainSections:
         - post
-        - zh-cn
-  # en:
-  #   languageName: English
-  #   title: Example Site
-  #   weight: 2
-  #   params:
-  #     sidebar:
-  #       subtitle: Example description
+      #   - zh-cn
 
 pagination:
   pagerSize: 3

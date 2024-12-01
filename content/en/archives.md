@@ -1,4 +1,4 @@
 ---
-title: test
+title: 归档
 layout: archives
 ---

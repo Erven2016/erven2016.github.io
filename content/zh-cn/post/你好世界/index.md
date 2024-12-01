@@ -7,7 +7,6 @@ math:
 license:
 hidden: false
 comments: true
-draft: false
 categories: 站点相关
 ---
 
