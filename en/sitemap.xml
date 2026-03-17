@@ -11,7 +11,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://blog.erven2016.com/about/"
                 />
   </url><url>
@@ -24,7 +24,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://blog.erven2016.com/"
                 />
   </url><url>
@@ -36,7 +36,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://blog.erven2016.com/categories/"
                 />
   </url><url>
@@ -48,7 +48,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://blog.erven2016.com/tags/"
                 />
   </url><url>
@@ -60,7 +60,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://blog.erven2016.com/archives/"
                 />
   </url>
