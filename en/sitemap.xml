@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
@@ -6,62 +7,62 @@
     <lastmod>2024-12-02T02:35:24+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.erven2016.com/zh-cn/about/"
+                hreflang="en-us"
+                href="https://blog.erven2016.com/about/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
-                href="https://blog.erven2016.com/about/"
+                hreflang="zh-cn"
+                href="https://blog.erven2016.com/zh-cn/about/"
                 />
   </url><url>
     <loc>https://blog.erven2016.com/</loc>
     <lastmod>2024-12-02T02:35:24+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.erven2016.com/zh-cn/"
+                hreflang="en-us"
+                href="https://blog.erven2016.com/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
-                href="https://blog.erven2016.com/"
+                hreflang="zh-cn"
+                href="https://blog.erven2016.com/zh-cn/"
                 />
   </url><url>
     <loc>https://blog.erven2016.com/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.erven2016.com/zh-cn/categories/"
+                hreflang="en-us"
+                href="https://blog.erven2016.com/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
-                href="https://blog.erven2016.com/categories/"
+                hreflang="zh-cn"
+                href="https://blog.erven2016.com/zh-cn/categories/"
                 />
   </url><url>
     <loc>https://blog.erven2016.com/tags/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.erven2016.com/zh-cn/tags/"
+                hreflang="en-us"
+                href="https://blog.erven2016.com/tags/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
-                href="https://blog.erven2016.com/tags/"
+                hreflang="zh-cn"
+                href="https://blog.erven2016.com/zh-cn/tags/"
                 />
   </url><url>
     <loc>https://blog.erven2016.com/archives/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.erven2016.com/zh-cn/archives/"
+                hreflang="en-us"
+                href="https://blog.erven2016.com/archives/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
-                href="https://blog.erven2016.com/archives/"
+                hreflang="zh-cn"
+                href="https://blog.erven2016.com/zh-cn/archives/"
                 />
   </url>
 </urlset>
